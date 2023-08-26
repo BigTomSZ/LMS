@@ -3,9 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokemon do Dia</title>
+    <!-- Titulo do Site -->
 </head>
 <body>
-    
+    <!-- Cabealho -->
+    <h1>Pokemon do Dia</h1>
+    <!-- Imagem do com link do Pikachu -->
+    <div style="background-color: yellow;">
+        <a href="https://www.pokemon.com/br/pokedex/pikachu">
+            <img src="./025.png" height="250px" alt="Pikachu">
+        </a>
+    </div>
+    <!-- Lista com evoluçoes -->
+    <div style="background-color: orange;">
+        <h4>Arvore de Evolução</h4>
+        <ul>
+            <li><a href="https://www.pokemon.com/br/pokedex/pichu">Pichu</a></li>
+            <li><a href="https://www.pokemon.com/br/pokedex/raichu">Raichu</a></li>
+        </ul>
+    </div>
+    <!-- Tabela com os Status -->
+    <div style="background-color: pink;">
+        <table>
+            <thead>
+                <tr>
+                  <th>Base</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+            <tr>
+                <th>HP:</th>
+                <td>35</td>
+            </tr>
+            <tr>
+                <th>ATK:</th>
+                <td>55</td>
+            </tr>
+            <tr>
+                <th>DEF:</th>
+                <td>40</td>
+            </tr>
+            <tr>
+                <th>SPA:</th>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>SPD:</th>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>SPE:</th>
+                <td>90</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Seção de Cadastro -->
+    <section>
+        <header>
+            <h1>Formulário de Cadastro de Usuários</h1>
+        </header>
+        <article>
+            <h4>Preencha o formulário abaixo:</h4>
+            <!-- Fomularia de casdastro-->
+            <form action="https://www.w3schools.com/action_page.php" method="get">
+                <label for="nome">Nome (até 15 caracteres):</label>
+                <input type="text" id="nome" name="nome" maxlength="15" required><br><br>
+                
+                <label for="numero">Número (entre 25000 e 30000):</label>
+                <input type="number" id="numero" name="numero" min="25000" max="30000" required><br><br>
+                
+                <label for="apenas_leitura">Campo Apenas Leitura:</label>
+                <input type="text" id="apenas_leitura" name="apenas_leitura" value="Aceite receber notificações" readonly><br><br>
+                
+                <label for="radio">Receber notificações:</label>
+                <input type="radio" id="opcao1" name="radio" value="opcao1" required>
+                <label for="opcao1">SIM</label>
+                <input type="radio" id="opcao2" name="radio" value="opcao2">
+                <label for="opcao2">NÃO</label><br><br>
+                
+                <label for="checkbox">Aceito os termos de serviço</label>
+                <input type="checkbox" id="checkbox" name="checkbox" value="marcado"><br><br>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+        </article>
+    </section>
 </body>
 </html>
